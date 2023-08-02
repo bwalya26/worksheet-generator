@@ -1,0 +1,76 @@
+{% extends "Aplus/base.html" %}
+{% load static %}
+{% block content %}
+
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+    }
+
+    .head_text {
+        color: white;
+    }
+
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
+</style>
+	<header class="masthead">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-8 col-md-10 mx-auto">
+					<div class="site-heading">
+						<h3 class=" site-heading my-4 mt-3 text-white"> Welcome to Canal </h3>
+						<p class="text-light"> Software Development Solutions for your Needs..! &nbsp
+						</p>
+					</div>
+				</div>
+			</div>
+			</div>
+</header>
+<div class="container">
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8 mt-3 left">
+            <div class="card" style="width: 25rem;">
+				<img class="card-img-top" src="{%static 'index.png' %}">
+                <div class="card-body">
+                    <p class="card-text text-muted h6">Worksheet on Indices</p>
+                   <a href="{% url 'Aplus:evaluate' %}" class="btn btn-primary">download worksheet</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 mt-3 left">
+            <div class="card" style="width: 25rem;">
+				<img class="card-img-top" src="{%static 'algebra.jpg' %}">
+                <div class="card-body">
+                    <p class="card-text text-muted h6">Worksheet on  Simplifing questions</p>
+                   <a href="{% url 'Aplus:simplify' %}" class="btn btn-primary">download worksheet</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 mt-3 left">
+            <div class="card" style="width: 25rem;">
+				<img class="card-img-top" src="{%static 'QuadraticFormula.JPG' %}">
+                <div class="card-body">
+                    <p class="card-text text-muted h6">Worksheet Quadratic Equations</p>
+                   <a href="{% url 'Aplus:quadratics' %}" class="btn btn-primary">download worksheet</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 mt-3 left">
+            <div class="card" style="width: 25rem;">
+				<img class="card-img-top" src="{%static 'velocity.jpg' %}">
+                <div class="card-body">
+                    <p class="card-text text-muted h6">Worksheet Travel Graphs</p>
+                   <a href="{% url 'Aplus:generate_graph' %}" class="btn btn-primary">download worksheet</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+{%endblock%}
